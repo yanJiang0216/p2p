@@ -35,7 +35,7 @@ def send():
     cs.close()
 sendButton1 = tk.Button(root,text='Send Message',command=send,width=20).pack(\
                         fill=tk.Y,side=tk.LEFT)
-text3 = tk.Text(root,width=40,height = 2)
+text3= tk.Text(root,width=40,height = 2)
 def sendFile():
     cs = socket(AF_INET,SOCK_STREAM,0)
     cs.connect(('192.168.2.121',8001))
